@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pie</title>
+   
+</head>
+<body>
+    <div style= "width: 100%; margin-top: 40px; display: flex; justify-content: center;">
+        <select style="font-size: 20px; " name="city_select" id="city_select">
+        </select>
+    </div>
+   
+    <div class="pie-container">
+        <div class="pie-container-inner">
+            <div class="pie" id="pie_one">
+                <h2>van de oppervlakte is bebouwd</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+            <div class="pie" id="pie_two">
+                <h2>is tevreden over de gemeente</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+            <div class="pie" id="pie_three">
+                <h2>is tevreden over de buurt</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+            <div class="pie" id="pie_four">
+                <h2>voelt zich gelukkig</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+            <div class="pie" id="pie_five">
+                <h2>heeft veel vertrouwen<br>in het gemeentebestuur</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+            <div class="pie" id="pie_six">
+                <h2>van de huishoudens<br>telt één persoon</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+            <div class="pie" id="pie_seven">
+                <h2>is werkzoekend</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+            <div class="pie" id="pie_eight">
+                <h2>van de woningen<br>zijn appartementen</h2>
+                <p class="percent" data-target="23"><span></span>%</p>
+            </div>
+
+            <div class="pie-center">
+                <h2 id="pie-center-title">Vlaam Gewest</h2>
+                <h3 id="pie-center-text"><span>100000</span><br>inwoners</h3>
+            </div>
+        </div>
+        <img src="img/family-icon.PNG" alt="family icon" class="icon family">
+        <img src="img/house-icon.PNG" alt="house icon" class="icon house">
+        <img src="img/smile-icon.PNG" alt="smile icon" class="icon smile">
+    </div>
+
+    <div id="center-line" style="width: 25%; height: 2vh;"></div>
+
+   
+
+    <script type="module" src="init_pie.js"></script>
+</body>
+</html>
